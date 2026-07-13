@@ -1,7 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Common Styles */
+.common-button{
+    background-color: #FD6E0A;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    border: none;
+}
+
+header{
+    background-color: #FFF8F3;
+}
+
 nav{
-    background-color: rgb(196, 183, 183);
+    
     display: flex;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 0;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.logo-r{
+    color: #FD6E0A;
 }
 
 ul{
@@ -9,4 +42,9 @@ ul{
     justify-content: space-between;
     list-style: none;
     gap: 10px;
+    align-items: center;
+}
+
+ul li a{
+    text-decoration: none;
 }
