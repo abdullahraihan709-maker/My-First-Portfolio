@@ -125,7 +125,7 @@ ul li a{
 }
 
 
-/* "What I Do" Section CSS */
+/* "What I Do" Section CSS Start */
 .what-i-do-parent{
     margin: 60px auto;
     text-align: center;
@@ -146,4 +146,50 @@ color:  #757575FF;
     border-radius: 10px;
     text-align: left;
 }
+/* "What I Do" Section CSS End*/
 
+
+
+
+/* "My Amazing Work" Section Start*/
+.my-amazing-parent{
+    text-align: center;
+    
+}
+
+.gallery{
+    margin-top: 20px;
+    display: grid;       /* .gallery becomes a grid container with display: grid. */
+    gap: 12px;             /* adds spacing between the grid items */
+    grid-template-columns: repeat(3, 1fr);  /* creates three equal-width columns. */
+    grid-auto-rows: 250px;      /* makes each row 250px tall. */
+    grid-template-areas:           /*"grid-template-areas" draws a "map" of where each box should go */
+    "one two three"
+    "four two six"
+    "four five six"
+}
+.gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-1{
+    grid-area: one;        /* Each " .box-* " uses "grid-area" to connect itself to its named spot on that "map". */
+}
+.box-2{
+    grid-area: two;
+}
+.box-3{
+    grid-area: three;
+}
+.box-4{
+    grid-area: four;
+}
+.box-5{
+    grid-area: five;
+}
+.box-6{
+    grid-area: six;
+}
+/* "My Amazing Work" Section End*/
