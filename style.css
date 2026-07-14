@@ -193,3 +193,42 @@ color:  #757575FF;
     grid-area: six;
 }
 /* "My Amazing Work" Section End*/
+
+
+/* Footer start */
+footer{
+    background-color: #fdf2ea;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 130px !important;    /* Here if we don't use "!important" priority, the margin-top property won't work becuse we also use the class named "container"* in the footer tag. In the container class above, we used "margin: auto", so our "margin-top: 130px" only work if we add priority(!important).*/
+    margin-bottom: 100px !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+}
+
+.footer-left{
+    margin: 10px 0;
+}
+
+footer form{
+    padding: 20px;
+}
+
+footer form input, footer form textarea{
+    
+    border: none;
+    background-color: white;
+    padding: 8px 15px;
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.footer-icon-parent span{
+    color: #FD6E0A;
+    font-size: 14px;
+}
+/* Footer End */
